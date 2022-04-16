@@ -1,0 +1,2 @@
+# needed
+While 3     ;Your code starts in this main loop     ConsoleWrite("Running" &amp; @LF)     Sleep(500) WEnd  Func _Pause()     MsgBox(0, "Message", "Script Paused") EndFunc   ;==>_Pause  Func _Exit()     Exit EndFunc   ;==>_Exit  HotKeySet("{Esc}", "_Exit")  $hGui = GUICreate("Gui Pause Button Example", 300, 80) $hPause = GUICtrlCreateButton("Pause", 120, 24, 60) GUISetState()  Global $Counter = 0 ; Not needed, just for demonstration purpose.
